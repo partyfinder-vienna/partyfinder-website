@@ -1,0 +1,286 @@
+/* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+
+:root{
+    --pink: #F752E0;
+    --lila: #460342;
+    --weiß: #fff;
+} /* variables*/
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--lila);
+    font-family: "Open Sans", sans-serif;
+    color: #F752E0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+
+/* Header */
+.header{
+  background-color: var(--lila);
+  box-shadow: 1px 1px 5px 0px var(--pink);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+/* Logo */
+.logo{
+  display: inline-block;
+  color: var(--pink);
+  font-size: 60px;
+  margin-left: 10px;
+  height: 75px;
+  width: auto;
+  padding: 10px;
+}
+
+
+
+/* Nav menu */
+.nav{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--lila);
+  overflow: hidden;
+
+}
+.menu a{
+  display: block;
+  padding: 20px;
+  color: var(--weiß);
+  font-size: x-large;
+}
+.menu a:hover{
+  background-color: var(--lila);
+}
+
+.menu b{
+    display: block;
+    padding: 20px;
+    color: var(--weiß);
+    font-size: x-large;
+  }
+  .menu b:hover{
+    background-color: var(--lila);
+  }
+
+.nav{
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+
+
+
+/* Menu Icon */
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+  background: var(--pink);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+  background: var(--pink);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamb-line::before{
+  top: 5px;
+}
+.hamb-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+} /* Hide checkbox */
+
+
+
+
+
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .btn {
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color:var(--lila);
+    color: black;
+    padding: 14px 28px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+  .nav{
+      max-height: 100px;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      background-color: transparent;
+  }
+  .menu li{
+      float: left;
+  }
+  .menu a:hover{
+      background-color: transparent;
+      color: var(--weiß);
+
+  }
+
+  .hamb{
+      display: none;
+  }
+  /* Stil für die Social-Media-Icons */
+}
+
+
+#kontakt {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+  
+  /* CSS für den Footer */
+  footer {
+    background-color: #F752E0;
+    height: 15vh;
+    margin-top: 50px;
+  }
+  
+  .footer-links {
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: white; /* Weiße Schriftfarbe für die Links */
+    margin: 20px;
+  }
+
+/* CSS für die Social-Media-Links */
+.social-links {
+  text-align: center; /* Rechts ausrichten */
+}
+
+.social-link {
+  display: inline-block;
+  margin: 15px 10px ; /* Abstand zwischen den Links (angepasst nach Bedarf), unten rechts */
+}
+
+/* Stil für die Social-Media-Icons */
+.social-link img {
+  width: 30px; /* Breite der Icons (angepasst nach Bedarf) */
+  height: auto; /* Höhe der Icons (angepasst nach Bedarf) */
+}
+
+.copyright {
+  color: white;
+  font-size: 10px;
+  margin-left: 20px;
+  text-align: center;
+
+}
+
+
+
+@media (min-width: 768px) {
+ /* CSS für den Footer */
+ footer {
+  background-color: #F752E0;
+  height: 15vh;
+  margin-top: 50px;
+}
+
+.footer-links {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white; /* Weiße Schriftfarbe für die Links */
+  margin: 20px; /* Abstand oben und unten 20px, links und rechts 20px (angepasst nach Bedarf) */
+}
+
+/* CSS für die Social-Media-Links */
+.social-links {
+text-align: right; /* Rechts ausrichten */
+margin-bottom: 0;
+}
+
+.social-link {
+display: inline-block;
+margin: 20px 10px 0px 0px; /* Abstand zwischen den Links (angepasst nach Bedarf), unten rechts */
+}
+
+/* Stil für die Social-Media-Icons */
+.social-link img {
+width: 40px; /* Breite der Icons (angepasst nach Bedarf) */
+height: auto; /* Höhe der Icons (angepasst nach Bedarf) */
+}
+/* CSS-Stil für den Urheberrechtshinweis */
+.copyright p {
+  font-size: 16px;
+  color: white;
+  font-size: 17px;
+  margin-left: 20px;
+  margin-top: -25px;
+}
+}

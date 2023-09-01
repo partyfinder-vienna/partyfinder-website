@@ -1,0 +1,22 @@
+body {
+    background-color: #460342;
+    color: #F752E0;
+    font-family: "Open Sans", sans-serif;
+ }
+ /* Stil für das Header-Logo */
+ .header img {
+     display: block; /* Um sicherzustellen, dass es horizontal zentriert ist */
+     margin: 0 auto; /* Zentriert das Bild horizontal */
+     height: 60px; /* Setzt die Höhe auf 60px */
+     padding: 10px; /* Fügt links und rechts einen Abstand hinzu */
+   }
+ h1 {
+     text-align: center;
+ 
+ }  
+
+ .paddingTop {
+    padding-top: 20px;
+    font-weight: bold;
+    margin-bottom: -10px;
+ }

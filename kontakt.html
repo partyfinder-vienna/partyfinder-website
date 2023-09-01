@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App title -->
+    <title>Responsive Pure CSS Menu</title>
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="kontakt.css">
+    <style>
+        main {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        * {box-sizing: border-box;}
+
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        h3 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 22px;
+        }
+        input[type=submit] {
+          background-color: #F752E0;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color:#F752E0;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="index.html"><img  src="logo.jpg" class="logo"></a>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="fürGastronomen.html">für Gastronomen</a></li>
+                <li><b href="kontakt.html" class="btn">Kontakt</b> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    
+      
+      <p id="kontakt">Willkommen auf unserer Kontaktseite!</p>
+    
+    
+
+<div class="container">
+  <form action="https://formsubmit.co/paryfinder.vienna@gmail.com" method="POST">
+    <label for="fname">Vor- und Nachname</label>
+    <input type="text" id="fname" name="name" placeholder="Dein Name..">
+    <label for="lname">E-mail</label>
+    <input type="text" id="lname" name="e-mail" placeholder="E-mail..">
+    
+    <label for="subject">Text</label>
+    <textarea id="subject" name="msg" placeholder="Schreibe etwas.." style="height:200px"></textarea>
+
+    <input type="submit" value="Schicken">
+  </form>
+</div>
+
+
+
+
+</main>
+<footer>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="cookieRichtlienen.html">Cookie-Richtlienen</a>
+    </div>
+    <div class="social-links">
+      <a href="https://www.tiktok.com/" target="_blank" class="social-link tiktok">
+        <img src="tiktok-logo-4511.png" alt="TikTok Icon">
+      
+      </a>
+      <a href="https://www.instagram.com/partyfinder_vienna/" target="_blank" class="social-link instagram">
+        <img src="black-instagram-logo-5546.png" alt="Instagram Icon">
+      
+      </a>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 XYZ Company. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+</body>
+</html>
