@@ -1,0 +1,36 @@
+body {
+    background-color: #460342;
+    color: #F752E0;
+    font-family: "Open Sans", sans-serif;
+ }
+ /* Stil für das Header-Logo */
+ .header img {
+     display: block; /* Um sicherzustellen, dass es horizontal zentriert ist */
+     margin: 0 auto; /* Zentriert das Bild horizontal */
+     height: 60px; /* Setzt die Höhe auf 60px */
+     padding: 10px; /* Fügt links und rechts einen Abstand hinzu */
+   }
+   h2 {
+    text-align: center;
+   }
+   .button-container {
+   margin-top: 40px;
+   text-align: center;
+  }
+  
+  
+  /* Stil für den Button */
+  .my-button {
+    background-color: #F752E0;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .my-button:hover {
+    background-color: #D042C8;
+  }
