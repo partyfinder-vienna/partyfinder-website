@@ -40,10 +40,9 @@
       <img src="hand-1850120.jpg" alt="Beschreibung des kleinen Bildes" class="small-screen-img">
           <img src="hand-1850120 2large.jpg" alt="Beschreibung des großen Bildes" class="large-screen-img">
 
-      <article>
-        <p class="large-text">Lade dir die App herunter</p>
-        <p class="large-text">und entdecke das Wiener Nachtleben!</p>
-      </article>
+          <article>
+            <p class="large-text">Hier der Link zum downloaden der App</p>
+          </article>
       <div class="btnzuApp">
         <a class="btn success" href="https://apps.apple.com/at/app/partyfinder-vienna/id6471597279">Hol dir die App!</a>
 
@@ -75,6 +74,37 @@
             </li>
           </ul>
         </div>
+        <hr class="divider">
+        <div class="questions">
+      <h2>häufig gestellte Fragen</h2>
+      <p>klicke auf die Frage um die Antwort zu sehen</p>
+
+        <div class="faq-container">
+          <div class="faq-item" onclick="toggleAnswer(1)">
+              <div class="faq-question">Auf welchen Betriebssystemen ist PartyFinder verfügbar?</div>
+              <div class="faq-answer">Aktuell nur im AppStore. Da wir ein sehr junges Startup sind haben wir uns entschieden zuerst auf IOS verfügbar zu sein und dann erst auf Android. Wir arbeiten aber schon daran auch auf Android verfügbar zu sein. </div>
+          </div>
+      
+          <div class="faq-item" onclick="toggleAnswer(2)">
+              <div class="faq-question">Ist die App kostenplichtig?</div>
+              <div class="faq-answer">Nein, mann muss werder etwas für die App zahlen, noch muss man in der App für die Nutzung zahlen. Auf manchen Seiten werden Sie kleine Werbebanner finden, die sind jedoch so unauffällig design, dass Sie nicht gestört werden.</div>
+          </div>
+      
+          <div class="faq-item" onclick="toggleAnswer(3)">
+            <div class="faq-question">Wie kann man Events eintragen?</div>
+            <div class="faq-answer">Wenn Sie ein Gastronom sind können sie unter "für Gastronomen" im Formular ein Event eintragen. Wir werden anschließend kontrollieren, ob es sich hier um kein fake handelt und dann das Event hochladen.</div>
+        </div>
+      
+      </div>
+        </div>
+      <script>
+          function toggleAnswer(index) {
+              var answer = document.getElementsByClassName('faq-answer')[index - 1];
+              answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
+          }
+      </script>
+
+
 
     </main>
 
