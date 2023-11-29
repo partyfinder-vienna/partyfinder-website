@@ -324,6 +324,7 @@ article {
   margin: 20px 0; /* Fügt oben und unten einen Abstand hinzu */
 }
 
+
 .questions{
   text-align: center;
 }
@@ -341,6 +342,7 @@ p{
 
 .faq-item {
   border: 1px solid #ccc;
+  border-radius: 10px;
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -348,6 +350,7 @@ p{
 .faq-question {
   padding: 10px;
   background-color: #f1f1f1;
+  border-radius: 10px;
   font-weight: bold;
 }
 
