@@ -328,10 +328,10 @@ article {
 .questions{
   text-align: center;
 }
-h2{
+.questions h2{
   font-size: 30px;
 }
-p{
+.questions p{
   font-size: 20px;
   padding: 20px;
 }
